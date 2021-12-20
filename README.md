@@ -64,9 +64,13 @@ A summary of the access policies in place can be found in the table below.
 Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because reduces that repetitive task which reduces errors. 
 The playbook implements the following tasks:
+
 •	The playbook first installs docker.io, python3-pip, and the docker module on all webservers that have been selected in the host file.
+
 •	The playbook will then increase the virtual memory and allocates that to the ELK Server.
+
 •	After, the docker ELK container is installed and launched.
+
 •	Finally, it will confirm the container is installed, configured and up and running using system command. 
 
 
@@ -78,18 +82,26 @@ The following screenshot displays the result of running docker ps after successf
 Target Machines & Beats
 
 This ELK server is configured to monitor the following machines:
+
 •	Web-1 10.0.0.5
+
 •	Web-2 10.0.0.6
 We have installed the following Beats on these machines:
+
 •	Filebeats and Metricbeats were installed to create logfiles to monitor. They were added to Logstash for processing and visualized in Kibana to be analyzed. 
 These Beats allow us to collect the following information from each machine:
+
 •	Filebeats collects system log information and stores it in a designated location. Filedbeat will index the last line of the index registry. If the network were to fail, and then rebooted, Filebeat would return to the last point before failure. 
+
 •	Metricbeat collects metric data, i.e., CPU usage or uptime of the system. Metricbeat can also monitor other beats on the system.  
 
 Using the Playbook
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 SSH into the control node and follow the steps below:
+
 •	Copy the ansible-playbook file to the node.
+
 •	Update the host file to include the IP addresses of the WebServers and the Elk Server. 
+
 •	Run the playbook, and navigate to Kibana site for the Elk server to check that the installation worked as expected. (http://20.112.79.200:5601/app/kibana#/home)
