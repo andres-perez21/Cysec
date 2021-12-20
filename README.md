@@ -1,16 +1,22 @@
 # Cysec
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
+
 •	TODO: Enter the playbook file.
+
 This document contains the following details:
+
 •	Description of the Topology
 •	Access Policies
 •	ELK Configuration 
 o	Beats in Use
 o	Machines Being Monitored
 •	How to Use the Ansible Build
+
 Description of the Topology
+
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+
 Load balancing ensures that the application will be highly available, in addition to restricting disallowed access to the network.
 •	Load balancers help protect against DDoS attacks. An advantage of the jump box is to be easily accessible, protected single access point into the virtual network. 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the and system matrix.
