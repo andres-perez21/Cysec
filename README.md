@@ -25,7 +25,7 @@ This document contains the following details:
 
 •	How to Use the Ansible Build
 
-Description of the Topology
+**Description of the Topology**
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting disallowed access to the network.
@@ -47,7 +47,7 @@ The configuration details of each machine may be found below.
 |     Web-2       |     DVWA                      |     10.0.0.6                  |     Linux               |
 |     Elk         |     IDS                       |     20.112.79.200/10.1.0.5    |     Linux               |
 
-Access Policies
+**Access Policies**
 
 The machines on the internal network are not exposed to the public Internet.
 
@@ -67,7 +67,8 @@ A summary of the access policies in place can be found in the table below.
 |     Elk         |     No                     |     10.0.0.4                  |
 		
 		
-Elk Configuration
+**Elk Configuration**
+
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because reduces that repetitive task which reduces errors. 
 The playbook implements the following tasks:
 
@@ -86,13 +87,14 @@ The following screenshot displays the result of running docker ps after successf
  ![image](https://user-images.githubusercontent.com/95457269/147009926-a8b3b4a7-ad22-45f3-9f7b-7773575dee6a.png)
 
 
-Target Machines & Beats
+**Target Machines & Beats**
 
 This ELK server is configured to monitor the following machines:
 
 •	Web-1 10.0.0.5
 
 •	Web-2 10.0.0.6
+
 We have installed the following Beats on these machines:
 
 •	Filebeats and Metricbeats were installed to create logfiles to monitor. They were added to Logstash for processing and visualized in Kibana to be analyzed. 
@@ -102,7 +104,7 @@ These Beats allow us to collect the following information from each machine:
 
 •	Metricbeat collects metric data, i.e., CPU usage or uptime of the system. Metricbeat can also monitor other beats on the system.  
 
-Using the Playbook
+**Using the Playbook**
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 SSH into the control node and follow the steps below:
