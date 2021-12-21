@@ -5,7 +5,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 •	[Filebeats Playbook](https://github.com/andres-perez21/Cysec/blob/main/Ansible/ansible/roles/filebeat-playbook.yml)
 
-•	[YAML Playbook](https://github.com/andres-perez21/Cysec/blob/main/Ansible/ansible/install-elk.yml)
+•	[ELK Playbook](https://github.com/andres-perez21/Cysec/blob/main/Ansible/ansible/install-elk.yml)
 
 •	[Webserver Playbook](https://github.com/andres-perez21/Cysec/blob/main/Ansible/ansible/my_playbook.yml)
 
