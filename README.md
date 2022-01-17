@@ -1,5 +1,7 @@
 # Cysec
 
+All the files in this repository were used to configure the private virtual network pictured below.
+
 ![VNet Diagram](Diagram/Network_Diagram.png)
 
 
